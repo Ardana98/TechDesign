@@ -1,0 +1,31 @@
+// assets/scss/base/_typography.scss
+@use '../abstracts/config' as *;
+
+
+body {
+    font-family: $font-family-primary;
+    font-size: $font-size-base;
+    line-height: 1.6;
+    color: $color-primary-text;
+}
+
+// Estilos de elementos HTML básicos
+a {
+    color: $color-dark-blue;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Estilos para encabezados (h1, h2, etc.)
+h1 { font-size: $font-size-h1; }
+h2 { font-size: $font-size-h2; }
+h3 { font-size: $font-size-h3; }
+h4 { font-size: $font-size-h4; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-secondary;
+    margin-bottom: $spacing-small;
+    color: $color-primary-text;
+}

@@ -1,0 +1,63 @@
+// assets/scss/_custom.scss
+// Este es el archivo principal que se compila a assets/css/style.css
+// Contiene la importación de Bootstrap, la sobrescritura de sus variables
+// y la importación de todos los demás parciales del proyecto.
+
+// Empleo 'as *' para poder usar las variables como $color-primary-text directamente sin el prefijo 'config.'
+@use 'abstracts/config' as *;
+
+// 2. Sobrescribí las variables por defecto de Bootstrap con mis valores personalizados
+// Estas variables deben definirse *antes* de la importación de Bootstrap.
+
+// Colores principales de Bootstrap, mapeados a mis variables
+$primary: $color-purple;        // Este será el color para `btn-primary`, `text-primary`, `bg-primary`
+$secondary: $color-secondary-text; // Un color secundario de Bootstrap
+$dark: $color-dark-blue;        // Este será el color para `bg-dark`, `text-dark`
+$light: $color-background-light; // El color para `bg-light`, `text-light`
+
+// Puedes definir el color del texto general del body
+$body-color: $color-primary-text;
+
+// Otras variables de Bootstrap que puedes sobrescribir
+// Puedes añadir aquí otras variables de colores de estado si las necesitas (success, info, warning, danger)
+$success: $color-light-blue; 
+$info: $color-white;
+$warning: $color-border-grey;
+// $danger: $color-red;
+
+// Tipografía de Bootstrap
+$font-family-sans-serif: $font-family-primary;
+$font-family-monospace: $font-family-secondary;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: $font-size-base;
+
+// Otros ajustes de Bootstrap (Border-radius)
+$border-radius: $border-radius-medium;
+$border-radius-sm: $border-radius-small;
+$border-radius-lg: $border-radius-large;
+
+// 3. Importa Bootstrap (todos sus parciales de SCSS)
+// ¡IMPORTANTE: Ruta corregida para sass --watch!
+@use "../../node_modules/bootstrap/scss/bootstrap";
+
+// 4. Importa tus estilos base
+@use 'base/reset';
+@use 'base/global-styles';
+@use 'base/typography';
+
+// 5. Importa tus estilos de layout
+@use 'layout/common-layout';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/sections';
+
+// 6. Importa tus estilos de componentes
+// Asegúrate de crear estos archivos vacíos por ahora si no existen
+@use 'components/button';
+@use 'components/card';
+@use 'components/form';
+@use 'components/hero';
+// ... y otros componentes BEM que vayas a crear para tu landing page
+
+// 7. Importa los estilos específicos de página (si los hay para la landing page)
+@use 'pages/home';
