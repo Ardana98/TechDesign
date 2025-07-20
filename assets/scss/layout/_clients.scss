@@ -1,0 +1,60 @@
+// assets/scss/layout/_clients.scss
+@use '../abstracts/config' as *;
+/* 
+.clients {
+    // Estilos generales para la sección de clientes si lo necesito
+    // Ejemplo:
+    // background-color: $color-background-light;
+} */
+
+.client-gallery {
+    // Asegura que el espacio entre columnas y filas sea consistente
+    // g-4 de Bootstrap ya maneja esto, pero puedo ajustar si quiero un espaciado diferente aquí.
+
+    .client-gallery__item {
+        overflow: hidden; // Esconde partes del overlay que se salgan del círculo
+        border-radius: 50%; // Asegura que el contenedor de la imagen sea un círculo perfecto
+        aspect-ratio: 1 / 1; // Mantiene el aspecto cuadrado/circular del contenedor
+        display: flex; // Ayuda a centrar la imagen dentro si es más pequeña
+        align-items: center;
+        justify-content: center;
+        cursor: pointer; // Indica que es interactivo
+
+        &:hover {
+            transform: scale(1.05);
+        }
+        
+
+        // Asegura que la imagen sea un círculo dentro del item
+        &__image {
+            object-fit: cover; // Asegura que la imagen cubra el área sin distorsionarse
+            width: 100%;
+            height: 100%;
+        }
+
+        &__overlay {
+            z-index: 2;// Asegura que el overlay esté por encima de la imagen
+            background-color: rgba($color-dark-blue, 0.85); // Overlay azul oscuro semitransparente
+            opacity: 0; // Por defecto, el overlay está oculto
+            visibility: hidden; // También oculta para accesibilidad
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; // Transición suave para aparecer
+        }
+
+        // Efecto hover: muestra el overlay
+        &:hover &__overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &__name {
+            font-size: $font-size-small; // Tamaño de fuente para el nombre
+            font-weight: 700;
+        }
+    }
+
+  
+}
+// estilos para el boton de ver todos 
+.clients__button {
+    margin-top: $spacing-large;
+}

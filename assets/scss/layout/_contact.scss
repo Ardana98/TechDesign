@@ -1,0 +1,21 @@
+// assets/scss/layout/_contact.scss
+@use '../abstracts/config' as *;
+
+.contact {
+    // Estilos generales para la sección de contacto si los necesitas
+    // Ejemplo:
+    // background-color: $color-background-light;
+
+    &__form-wrapper {
+        background-color: $color-white; // Fondo blanco para el contenedor del formulario
+        max-width: 600px; // Limita el ancho máximo del formulario para mejor legibilidad
+    }
+
+   /*  &__form {
+        // Estilos específicos para el formulario si Bootstrap no los cubre
+        // Ejemplo:
+        // .contact-form__label {
+        //     font-weight: 600;
+        // }
+    } */
+}

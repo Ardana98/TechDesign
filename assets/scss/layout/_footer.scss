@@ -1,0 +1,68 @@
+// assets/scss/layout/_footer.scss
+@use '../abstracts/config' as *; 
+
+.main-footer {
+    background-color: $color-dark-blue; // Usa tu variable de color
+    color: $color-white;
+    padding: $spacing-medium 0; // Padding vertical usando mi variable
+    font-size: $font-size-small;
+    margin-top: auto; /* crucial para el "Sticky Footer" */
+
+    /* Clases BEM específicas dentro del footer */
+    /*  &__logo-container {
+        // Estilos para el contenedor del logo si los necesita
+    } */
+
+    &__logo {
+        max-width: 80px; // Limita el ancho del logo
+        display: block;
+        margin-inline: auto; // Centra el logo horizontalmente
+
+    }
+
+    &__description {
+        // Estilos para la descripción
+        font-size: $font-size-small;
+        line-height: 1.5;
+        // Si necesito un color ligeramente diferente, por ejemplo:
+        // color: rgba($color-white, 0.8);
+    }
+
+    &__contact-info {
+        // Estilos para los bloques de info de contacto
+        margin-bottom: $spacing-small; // Espacio entre bloques de contacto
+    }
+
+    &__contact-heading {
+        color: $color-white; // Asegura que los títulos sean blancos
+        margin-bottom: $spacing-xx-small; // Espacio entre título y detalle
+    }
+
+    &__contact-detail {
+        margin-bottom: 0; // Elimina el margen inferior por defecto de los párrafos
+    }
+
+    // El bloque .social-links ya lo tenía definido.
+    // Estilos específicos para los enlaces sociales (elementos del bloque social-links)
+    .social-links {
+        a {
+            transition: transform 0.2s ease-in-out;
+            display: inline-block; // Asegura que la transformación funcione
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            // Aquí podría estilizar los iconos directamente si son SVG
+            /* &__icon {
+                // filter: invert(100%); // Si mis iconos son negros y quiero que sean blancos
+            } */
+        }
+    };
+
+    &__copyright {
+        font-size: $font-size-small;
+        // Si necesito un color ligeramente diferente:
+        // color: rgba($color-white, 0.7);
+    }
+}

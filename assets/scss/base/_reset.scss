@@ -1,0 +1,34 @@
+html {
+    height: 100%;
+    box-sizing: border-box; // Define el box-sizing en la raíz
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; // Hace que todos los elementos hereden el box-sizing del html
+}
+
+// Quita el margen y padding por defecto de las listas
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+// Reset básico para elementos de formulario y otros
+button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+// Asegura que las imágenes no se desborden y se alineen bien
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; // Evita el espacio extra bajo las imágenes
+}
