@@ -6,39 +6,38 @@
 // Empleo 'as *' para poder usar las variables como $color-primary-text directamente sin el prefijo 'config.'
 @use 'abstracts/config' as *;
 
-// 2. Sobrescribí las variables por defecto de Bootstrap con mis valores personalizados
-// Estas variables deben definirse *antes* de la importación de Bootstrap.
+@use "../../node_modules/bootstrap/scss/bootstrap" with (
+  // Colores de Bootstrap:
+  $primary: $color-purple,         
+  $secondary: $color-secondary-text,         
+  $dark: $color-primary-text,     
+  $light: $color-white, 
+  $success: $color-dark-blue,
+  $info: $color-light-blue, 
+  $warning: $color-border-grey,  
+  $body-bg: $color-background-light,
+  $link-color: $color-light-grey, 
+  $link-decoration: none, // Quitar subrayado por defecto de enlaces
 
-// Colores principales de Bootstrap, mapeados a mis variables
-$primary: $color-purple;        // Este será el color para `btn-primary`, `text-primary`, `bg-primary`
-$secondary: $color-secondary-text; // Un color secundario de Bootstrap
-$dark: $color-dark-blue;        // Este será el color para `bg-dark`, `text-dark`
-$light: $color-background-light; // El color para `bg-light`, `text-light`
+  // Tipografía
+  $font-family-base: $font-family-primary, // Fuente principal para todo el cuerpo
+  $headings-font-family: $font-family-primary, // O si tengo una fuente específica para títulos
 
-// Puedes definir el color del texto general del body
-$body-color: $color-primary-text;
+  // Tamaños de fuente para títulos (puedo mapearlos a mis variables de _config)
+  $h1-font-size: $font-size-h1,
+  $h2-font-size: $font-size-h2,
+  $h3-font-size: $font-size-h3,
+  $h4-font-size: $font-size-h4, // Bootstrap también tiene h4-h6
+  
 
-// Otras variables de Bootstrap que puedes sobrescribir
-// Puedes añadir aquí otras variables de colores de estado si las necesitas (success, info, warning, danger)
-$success: $color-light-blue; 
-$info: $color-white;
-$warning: $color-border-grey;
-// $danger: $color-red;
+  // Border-radius
+  $border-radius: $border-radius-small, // Radios de borde para componentes generales
+  $border-radius-sm: $border-radius-small,
+  $border-radius-lg: $border-radius-medium, // Puedo usar medium para 'lg'
 
-// Tipografía de Bootstrap
-$font-family-sans-serif: $font-family-primary;
-$font-family-monospace: $font-family-secondary;
-$font-family-base: $font-family-sans-serif;
-$font-size-base: $font-size-base;
-
-// Otros ajustes de Bootstrap (Border-radius)
-$border-radius: $border-radius-medium;
-$border-radius-sm: $border-radius-small;
-$border-radius-lg: $border-radius-large;
-
-// 3. Importa Bootstrap (todos sus parciales de SCSS)
-// ¡IMPORTANTE: Ruta corregida para sass --watch!
-@use "../../node_modules/bootstrap/scss/bootstrap";
+  // Transiciones (puedo usar mis variables si quiero ser muy específica)
+  $transition-base: all $transition-speed $transition-ease
+);
 
 // 4. Importa tus estilos base
 @use 'base/reset';
