@@ -1,0 +1,25 @@
+// assets/scss/components/_button.scss
+@use '../abstracts/config' as *;
+
+// Estilos personalizados para los  botones (que complementan o sobrescriben Bootstrap)
+.btn-primary { // Aplica a la clase btn-primary de Bootstrap
+    // Ejemplo de personalización si Bootstrap no lo cubriera o para un toque extra
+    font-family: $font-family-primary;
+    font-weight: 700; // Negrita
+    padding: $spacing-x-small $spacing-medium; // Ajusta el padding
+    border-radius: $border-radius-medium; // Usa tu border-radius definido
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-2px); // Efecto ligero al pasar el cursor
+        // background-color: darken($color-purple, 10%); // Oscurece el morado en hover
+    }
+}
+
+// Si quiero un modificador BEM para un botón de formulario más ancho:
+.btn--form-wide {
+    width: 100%; // Ocupa todo el ancho disponible
+    max-width: 300px; // O un max-width para control
+    margin-left: auto; // Centra si está en un contenedor flex/grid
+    margin-right: auto;
+}
