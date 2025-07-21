@@ -2,7 +2,7 @@
 @use '../abstracts/config' as *;
 
 .hero {
-    position: relative; // Necesario para el overlay
+    position: relative; // interesting: Necesario para el overlay
     min-height: 50vh; // Altura mínima de la sección para dispositivos móviles
     background-image: url('../../assets/img/h5.jpg'); 
     background-size: cover;
