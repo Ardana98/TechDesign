@@ -1,10 +1,10 @@
 html {
     height: 100%;
-    box-sizing: border-box; // Define el box-sizing en la raíz
+    box-sizing: border-box; 
 }
 
 *, *::before, *::after {
-    box-sizing: inherit; // Hace que todos los elementos hereden el box-sizing del html
+    box-sizing: inherit; // interesting :todos los elementos heredaran el box-sizing del html
 }
 
 // Quita el margen y padding por defecto de las listas

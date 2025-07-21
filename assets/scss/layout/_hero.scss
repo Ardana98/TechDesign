@@ -4,14 +4,14 @@
 .hero {
     position: relative; // Necesario para el overlay
     min-height: 50vh; // Altura mínima de la sección para dispositivos móviles
-    background-image: url('../../assets/img/h5.jpg'); // Imagen de fondo
+    background-image: url('../../assets/img/h5.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex; // Para que el contenido interno se centre con las clases de Bootstrap
     align-items: center;
     justify-content: center;
-    color: $color-white; // Color del texto por defecto en la sección
+    color: $color-white; 
 
     // Overlay oscuro para mejorar la legibilidad del texto
     &::before {
@@ -28,7 +28,7 @@
     // Asegura que el contenido esté por encima del overlay
     &__content {
         position: relative;
-        z-index: 2; // Coloca el contenido por encima del overlay
+        z-index: 2; 
         padding: $spacing-large; 
     }
 

@@ -2,26 +2,23 @@
 @use '../abstracts/config' as *;
 
 .contact-form {
-   
-
+    // Estilos generales para el formulario de contacto
     &__label {
-        font-weight: 600; // Por ejemplo, labels más negritas
+        font-weight: 600; 
         color: $color-primary-text;
         margin-bottom: $spacing-xx-small; // Poco espacio entre label y input
     }
 
     &__input {
         // Estilos para inputs y textareas
-        border: 1px solid $color-border-grey; // Borde sutil
-        padding: $spacing-x-small; // Ajusta el padding
+        border: 1px solid $color-border-grey; 
+        padding: $spacing-x-small; 
         border-radius: $border-radius-small;
-        // width: 100%;  // Ocupa todo el ancho disponible
         &:focus {
             border-color: $color-purple; // Borde morado al enfocar
             box-shadow: 0 0 0 0.25rem rgba($color-purple, 0.25); // Sombra morada al enfocar
-            // outline: none
+            
         }
     }
 
-   
 }

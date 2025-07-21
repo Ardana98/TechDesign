@@ -2,9 +2,6 @@
 @use '../abstracts/config' as *;
 
 .contact {
-    // Estilos generales para la sección de contacto si los necesitas
-    // Ejemplo:
-    // background-color: $color-background-light;
 
     &__form-wrapper {
         background-color: $color-white; 

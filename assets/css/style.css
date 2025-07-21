@@ -11955,7 +11955,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   padding: 20px 0;
   font-size: 0.875rem;
-  margin-top: auto; /* crucial para el "Sticky Footer" */
+  margin-top: auto; /* ineresting: crucial para el "Sticky Footer" */
 }
 .main-footer__logo {
   max-width: 80px;
@@ -11984,9 +11984,6 @@ h1, h2, h3, h4, h5, h6 {
 .main-footer .social-links a {
   transition: transform 0.2s ease-in-out;
   display: inline-block;
-  /* &__icon {
-      // filter: invert(100%); // Si mis iconos son negros y quiero que sean blancos
-  } */
 }
 .main-footer .social-links a:hover {
   transform: scale(1.1);
@@ -12073,6 +12070,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-primary:hover {
   transform: translateY(-2px);
+  background-color: rgb(119.7957446809, 1.5659574468, 182.4340425532);
 }
 
 .btn--form-wide {

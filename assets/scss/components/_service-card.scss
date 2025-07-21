@@ -2,10 +2,10 @@
 @use '../abstracts/config' as *;
 
 .service-card {
-    display: flex;       // Usa flexbox para alinear contenido dentro de la tarjeta
-    flex-direction: column; // Apila los elementos verticalmente
-    align-items: center; // Centra el contenido horizontalmente
-    text-align: center; // Centra el texto
+    display: flex;       
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; // Transición para efecto hover
     // Para asegurar consistencia con h-100 
     height: 100%; 
@@ -18,17 +18,15 @@
 
     &__icon {
         // Estilos para los iconos dentro de la tarjeta
-        // Nota: Este filtro convierte a púrpura si el icono es blanco o de un color que se pueda invertir.
-        // Si mis iconos son a color, reemplazar esta línea por la ruta de iconos ya coloreados.
         filter: invert(18%) sepia(97%) saturate(6970%) hue-rotate(282deg) brightness(80%) contrast(100%); 
     }
 
     &__title {
-        color: $color-dark-blue; // Usa tu color oscuro para los títulos de las tarjetas
+        color: $color-dark-blue; 
     }
 
     &__description {
-        font-size: $font-size-small; // Descripción un poco más pequeña
+        font-size: $font-size-small; 
     }
 
 }

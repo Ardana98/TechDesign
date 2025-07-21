@@ -6,7 +6,7 @@
     color: $color-white;
     padding: $spacing-medium 0;
     font-size: $font-size-small;
-    margin-top: auto; /* crucial para el "Sticky Footer" */
+    margin-top: auto; /* ineresting: crucial para el "Sticky Footer" */
 
     
 
@@ -16,8 +16,7 @@
         margin-inline: auto; // Centra el logo horizontalmente
         @media (min-width: 992px) { // Esto es para el breakpoint 'lg' de Bootstrap
             margin-inline: 0; // Quita el centrado y lo alinea a la izquierda (por defecto de block)
-            // o si prefieres margin-right: auto; para asegurar que siempre empuje a la derecha
-            // margin-right: auto;
+            
         }
 
     }
@@ -26,8 +25,8 @@
         // Estilos para la descripción
         font-size: $font-size-small;
         line-height: 1.5;
-        // Si necesito un color ligeramente diferente, por ejemplo:
-        // color: rgba($color-white, 0.8);
+        
+        
     }
 
     &__contact-info {
@@ -36,15 +35,15 @@
     }
 
     &__contact-heading {
-        color: $color-white; // Asegura que los títulos sean blancos
-        margin-bottom: $spacing-xx-small; // Espacio entre título y detalle
+        color: $color-white; 
+        margin-bottom: $spacing-xx-small; 
     }
 
     &__contact-detail {
         margin-bottom: 0; // Elimina el margen inferior por defecto de los párrafos
     }
 
-    // El bloque .social-links ya lo tenía definido.
+    
     // Estilos específicos para los enlaces sociales (elementos del bloque social-links)
     .social-links {
         a {
@@ -54,17 +53,13 @@
             &:hover {
                 transform: scale(1.1);
             }
-
-            // Aquí podría estilizar los iconos directamente si son SVG
-            /* &__icon {
-                // filter: invert(100%); // Si mis iconos son negros y quiero que sean blancos
-            } */
+            
         }
     };
 
     &__copyright {
         font-size: $font-size-small;
-        // Si necesito un color ligeramente diferente:
-        // color: rgba($color-white, 0.7);
+        
+        
     }
 }

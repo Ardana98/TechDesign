@@ -15,14 +15,14 @@
     // g-4 de Bootstrap ya maneja esto, pero puedo ajustar si quiero un espaciado diferente aquí.
 
     .client-gallery__item {
-        overflow: hidden; // Esconde partes del overlay que se salgan del círculo
-        border-radius: 50%; // Asegura que el contenedor de la imagen sea un círculo perfecto
+        overflow: hidden; 
+        border-radius: 50%; 
         aspect-ratio: 1 / 1; // Mantiene el aspecto cuadrado/circular del contenedor
         display: flex; // Ayuda a centrar la imagen dentro si es más pequeña
         align-items: center;
         justify-content: center;
-        cursor: pointer; // Indica que es interactivo
-        border: 2px solid $color-light-blue; // Borde blanco para destacar el círculo
+        cursor: pointer; 
+        border: 2px solid $color-light-blue; 
 
         &:hover {
             transform: scale(1.05);
