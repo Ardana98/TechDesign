@@ -2,21 +2,23 @@
 @use '../abstracts/config' as *; 
 
 .main-footer {
-    background-color: $color-dark-blue; // Usa tu variable de color
+    background-color: $color-primary-text; 
     color: $color-white;
-    padding: $spacing-medium 0; // Padding vertical usando mi variable
+    padding: $spacing-medium 0;
     font-size: $font-size-small;
     margin-top: auto; /* crucial para el "Sticky Footer" */
 
-    /* Clases BEM específicas dentro del footer */
-    /*  &__logo-container {
-        // Estilos para el contenedor del logo si los necesita
-    } */
+    
 
     &__logo {
         max-width: 80px; // Limita el ancho del logo
         display: block;
         margin-inline: auto; // Centra el logo horizontalmente
+        @media (min-width: 992px) { // Esto es para el breakpoint 'lg' de Bootstrap
+            margin-inline: 0; // Quita el centrado y lo alinea a la izquierda (por defecto de block)
+            // o si prefieres margin-right: auto; para asegurar que siempre empuje a la derecha
+            // margin-right: auto;
+        }
 
     }
 

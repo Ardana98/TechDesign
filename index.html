@@ -17,11 +17,10 @@
 
 <body class="d-flex flex-column min-vh-100">
     <header class="main-header">
-        <nav class="main-navbar navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="main-navbar navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
                 <a class="main-navbar__brand navbar-brand" href="#inicio">
-                    <img src="assets/img/logo0.png" alt="TechDesign Solutions Logo" class="main-navbar__logo" width="40"
-                        height="40">
+                    <img src="assets/img/logo0.png" alt="TechDesign Solutions Logo" class="main-navbar__logo ">
                     TechDesign Solutions
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -31,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="main-navbar__menu navbar-nav ms-auto">
                         <li class="main-navbar__item nav-item">
-                            <a class="main-navbar__link nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                            <a class="main-navbar__link nav-link " aria-current="page" href="#inicio">Inicio</a>
                         </li>
                         <li class="main-navbar__item nav-item">
                             <a class="main-navbar__link nav-link" href="#nosotros">Nosotros</a>
@@ -54,15 +53,15 @@
     <main class="site-content">
         <section id="inicio" class="hero py-5 d-flex align-items-center justify-content-center text-center text-white">
             <div class="container hero__content">
-                <h1 class="hero__title display-4 fw-bold">TechDesign Solutions</h1>
-                <p class="hero__slogan lead mt-3">¡Desarrollamos tu Presencia Digital!</p>
+                <h1 class="hero__title display-4 fw-bold text-light">TechDesign Solutions</h1>
+                <p class="hero__slogan lead mt-3 bg-info">¡Desarrollamos tu Presencia Digital!</p>
             </div>
         </section>
 
         <section id="nosotros" class="about py-5">
             <div class="container text-center">
                 <h2 class="about__heading display-5 fw-bold mb-3">¿Quiénes somos?</h2>
-                <h3 class="about__subheading h4 text-secondary mb-4">Razones para comprar con nosotros</h3>
+                <h3 class="about__subheading h4 text-primary mb-4">Razones para comprar con nosotros</h3>
                 <p class="about__text lead mb-4">
                     TechDesign Solutions nace como una respuesta a tus necesidades tecnológicas, donde nuestro principal
                     objetivo es ayudar a desarrollar tus proyectos tecnológicos. Nuestra experiencia se centra en la
@@ -79,13 +78,13 @@
         <section id="servicios" class="services py-5">
             <div class="container text-center">
                 <h2 class="services__heading display-5 fw-bold mb-3">¿A qué nos dedicamos?</h2>
-                <h3 class="services__subheading h4 text-secondary mb-5">Servicios Destacados</h3>
+                <h3 class="services__subheading h4 text-info mb-5">Servicios Destacados</h3>
 
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
                     <div class="col">
                         <div class="service-card h-100 p-4 shadow-sm border-0 rounded">
-                            <img src="assets/img/ecommerce.webp" class="service-card__icon mb-3" alt="Icono Web Ecommerce"
-                                width="60" height="60">
+                            <img src="assets/img/ecommerce.webp" class="service-card__icon mb-3"
+                                alt="Icono Web Ecommerce" width="60" height="60">
                             <h4 class="service-card__title h5 fw-bold mb-2">WEB ECOMMERCE</h4>
                             <p class="service-card__description mb-3">Aumenta tus ventas y productividad vendiendo 100%
                                 online con un sitio web e-commerce personalizado.</p>
@@ -94,8 +93,8 @@
                     </div>
                     <div class="col">
                         <div class="service-card h-100 p-4 shadow-sm border-0 rounded">
-                            <img src="assets/img/aplicaciones.webp" class="service-card__icon mb-3" alt="Icono Aplicaciones Web"
-                                width="60" height="60">
+                            <img src="assets/img/aplicaciones.webp" class="service-card__icon mb-3"
+                                alt="Icono Aplicaciones Web" width="60" height="60">
                             <h4 class="service-card__title h5 fw-bold mb-2">APLICACIONES WEB</h4>
                             <p class="service-card__description mb-3">Creamos soluciones de software a medida que se
                                 adapten a las necesidades del cliente, garantizando una aplicación robusta y eficiente.
@@ -105,8 +104,8 @@
                     </div>
                     <div class="col">
                         <div class="service-card h-100 p-4 shadow-sm border-0 rounded">
-                            <img src="assets/img/integraciones.webp" class="service-card__icon mb-3" alt="Icono Integraciones"
-                                width="60" height="60">
+                            <img src="assets/img/integraciones.webp" class="service-card__icon mb-3"
+                                alt="Icono Integraciones" width="60" height="60">
                             <h4 class="service-card__title h5 fw-bold mb-2">INTEGRACIONES</h4>
                             <p class="service-card__description mb-3">Si tienes un sitio o aplicación web, te ayudamos a
                                 integrar tus necesidades a la plataforma existente.</p>
@@ -123,94 +122,84 @@
                             <a href="#" class="service-card__button btn btn-primary mt-auto">Ver más</a>
                         </div>
                     </div>
-                   
+
         </section>
 
         <section id="clientes" class="clients py-5">
             <div class="container text-center">
-                <h2 class="clients__heading display-5 fw-bold mb-3">¿Con quién hemos trabajado?</h2>
-                <h3 class="clients__subheading h4 text-secondary mb-5">Nuestros clientes</h3>
+                <h2 class="clients__heading display-5 fw-bold mb-3 text-light">¿Con quién hemos trabajado?</h2>
+                <h3 class="clients__subheading h4 text-primary mb-5">Nuestros clientes</h3>
 
                 <div
                     class="client-gallery row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4 justify-content-center mb-5">
                     <div class="col">
                         <div class="client-gallery__item position-relative">
                             <img src="assets/img/jacinta.jpeg" class="client-gallery__image img-fluid rounded-circle"
-                                alt="Jacinta tienda">
-                            <div
-                                class="client-gallery__overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center rounded-circle p-2">
-                                <span class="client-gallery__name text-white fw-bold text-center">jacinta tienda</span>
-                            </div>
+                                alt="logo jacinta tienda">
+
                         </div>
                     </div>
                     <div class="col">
                         <div class="client-gallery__item position-relative">
                             <img src="assets/img/ca.png" class="client-gallery__image img-fluid rounded-circle"
-                                alt="Logo Cliente 2">
-                            <div
-                                class="client-gallery__overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center rounded-circle p-2">
-                                <span class="client-gallery__name text-white fw-bold text-center">cambia tu auto</span>
-                            </div>
+                                alt="logo cambia tu auto ">
+
                         </div>
                     </div>
                     <div class="col">
                         <div class="client-gallery__item position-relative">
                             <img src="assets/img/cas.png" class="client-gallery__image img-fluid rounded-circle"
-                                alt="Logo Cliente 3">
-                            <div
-                                class="client-gallery__overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center rounded-circle p-2">
-                                <span class="client-gallery__name text-white fw-bold text-center">Cas</span>
-                            </div>
+                                alt="Logo Casa Grande">
+
                         </div>
                     </div>
                     <div class="col">
                         <div class="client-gallery__item position-relative">
                             <img src="assets/img/delirio.jpeg" class="client-gallery__image img-fluid rounded-circle"
-                                alt="Logo Cliente 4">
-                            <div
-                                class="client-gallery__overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center rounded-circle p-2">
-                                <span class="client-gallery__name text-white fw-bold text-center">delirio</span>
-                            </div>
+                                alt="Logo Delirio">
+
                         </div>
                     </div>
                     <div class="col">
                         <div class="client-gallery__item position-relative">
                             <img src="assets/img/faba.png" class="client-gallery__image img-fluid rounded-circle"
-                                alt="Logo Cliente 5">
-                            <div
-                                class="client-gallery__overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center rounded-circle p-2">
-                                <span class="client-gallery__name text-white fw-bold text-center">faba</span>
-                            </div>
+                                alt="Logo faba">
+
                         </div>
                     </div>
                     <div class="col">
                         <div class="client-gallery__item position-relative">
                             <img src="assets/img/tl.jpeg" class="client-gallery__image img-fluid rounded-circle"
-                                alt="Logo Cliente 6">
-                            <div
-                                class="client-gallery__overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center rounded-circle p-2">
-                                <span class="client-gallery__name text-white fw-bold text-center"> Te lo Vendo</span>
-                            </div>
+                                alt="Logo TeloVendo">
+
                         </div>
                     </div>
                     <div class="col">
                         <div class="client-gallery__item position-relative">
                             <img src="assets/img/wl.png" class="client-gallery__image img-fluid rounded-circle"
-                                alt="Logo Cliente 7">
-                            <div
-                                class="client-gallery__overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center rounded-circle p-2">
-                                <span class="client-gallery__name text-white fw-bold text-center">Wild Lama</span>
-                            </div>
+                                alt="Logo Wild Lama">
+
                         </div>
                     </div>
                     <div class="col">
                         <div class="client-gallery__item position-relative">
                             <img src="assets/img/m.png" class="client-gallery__image img-fluid rounded-circle"
-                                alt="Logo Cliente 8">
-                            <div
-                                class="client-gallery__overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center rounded-circle p-2">
-                                <span class="client-gallery__name text-white fw-bold text-center">mutant</span>
-                            </div>
+                                alt="Logo Mutang">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="client-gallery__item position-relative">
+                            <img src="assets/img/wl.png" class="client-gallery__image img-fluid rounded-circle"
+                                alt="Logo Wild Lama">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="client-gallery__item position-relative">
+                            <img src="assets/img/m.png" class="client-gallery__image img-fluid rounded-circle"
+                                alt="Logo Mutang">
+
                         </div>
                     </div>
                 </div>
@@ -222,7 +211,7 @@
         <section class="reason py-5">
             <div class="container text-center">
                 <h2 class="reason__heading display-5 fw-bold mb-3">¿Por qué elegir TechDesign Solutions?</h2>
-                <h3 class="reason__subheading h4 text-secondary mb-4">¡Escógenos!</h3>
+                <h3 class="reason__subheading h4 text-info mb-4">¡Escógenos!</h3>
                 <p class="reason__text lead col-lg-8 mx-auto">
                     Nos encargamos de brindar soluciones personalizadas, funcionales y autogestionables. Utilizamos
                     tecnología de vanguardia y las mejores prácticas con el fin de brindar una solución robusta y
@@ -235,7 +224,7 @@
         <section id="contacto" class="contact py-5">
             <div class="container text-center">
                 <h2 class="contact__heading display-5 fw-bold mb-3">¿Tienes alguna duda?</h2>
-                <h3 class="contact__subheading h4 text-secondary mb-5">Contáctanos</h3>
+                <h3 class="contact__subheading h4 text-primary mb-5">Contáctanos</h3>
 
                 <div class="contact__form-wrapper mx-auto p-4 p-md-5 rounded shadow-lg">
                     <form class="contact-form">
@@ -268,54 +257,70 @@
         </section>
     </main>
 
-    <footer class="main-footer text-center py-4">
+    <footer class="main-footer py-4">
         <div class="container">
-            <div class="main-footer__logo-container mb-3">
-                <img src="assets/img/logo0.png" alt="TechDesign Solutions Logo" class="main-footer__logo img-fluid"
-                    >
-            </div>
+            <div class="row">
 
-            <div class="main-footer__social-links social-links d-flex justify-content-center gap-3 mx-auto mb-4">
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook"
-                    class="social-links__item text-white">
-                    <img src="assets/img/f.png" alt="Facebook" class="social-links__icon" width="30" height="30">
-                </a>
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram"
-                    class="social-links__item text-white">
-                    <img src="assets/img/i.png" alt="Instagram" class="social-links__icon" width="30" height="30">
-                </a>
-                <a href="https://wa.me/XXXXXXXXXX" target="_blank" aria-label="WhatsApp"
-                    class="social-links__item text-white">
-                    <img src="assets/img/w.png" alt="WhatsApp" class="social-links__icon" width="30" height="30">
-                </a>
-                <a href="https://linkedin.com/company/techdesign-solutions" target="_blank" aria-label="LinkedIn"
-                    class="social-links__item text-white">
-                    <img src="assets/img/l.png" alt="LinkedIn" class="social-links__icon" width="30" height="30">
-                </a>
-            </div>
+                <div class="col-12 col-md-6 col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+                    <div class="main-footer__logo-container mb-3">
+                        <img src="assets/img/logo0.png" alt="TechDesign Solutions Logo"
+                            class="main-footer__logo img-fluid">
+                    </div>
+                    <div
+                        class="main-footer__social-links social-links d-flex justify-content-center justify-content-lg-start gap-3 mb-4">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+                            class="social-links__item text-white">
+                            <img src="assets/img/f.png" alt="Facebook" class="social-links__icon" width="30"
+                                height="30">
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+                            class="social-links__item text-white">
+                            <img src="assets/img/i.png" alt="Instagram" class="social-links__icon" width="30"
+                                height="30">
+                        </a>
+                        <a href="https://wa.me/XXXXXXXXXX" target="_blank" aria-label="WhatsApp"
+                            class="social-links__item text-white">
+                            <img src="assets/img/w.png" alt="WhatsApp" class="social-links__icon" width="30"
+                                height="30">
+                        </a>
+                        <a href="https://linkedin.com/company/techdesign-solutions" target="_blank"
+                            aria-label="LinkedIn" class="social-links__item text-white">
+                            <img src="assets/img/l.png" alt="LinkedIn" class="social-links__icon" width="30"
+                                height="30">
+                        </a>
+                    </div>
+                </div>
 
-            <p class="main-footer__description mb-4 col-lg-8 mx-auto">
-                TechDesign Solutions es una empresa especializada en brindar soluciones digitales personalizadas.
-                Nuestros servicios son mayoritariamente de desarrollo y diseño de sitios o aplicaciones web para tiendas
-                virtuales e integraciones a plataformas web ya existentes.
-            </p>
+                <div
+                    class="col-12 col-md-6 col-lg-4 text-center text-lg-start mb-4 mb-lg-0 d-lg-flex flex-lg-column justify-content-lg-center">
+                    <p class="main-footer__description">
+                        TechDesign Solutions es una empresa especializada en brindar soluciones digitales
+                        personalizadas.
+                        Nuestros servicios son mayoritariamente de desarrollo y diseño de sitios o aplicaciones web para
+                        tiendas
+                        virtuales e integraciones a plataformas web ya existentes.
+                    </p>
+                </div>
 
-            <div class="main-footer__contact-info mb-3">
-                <h3 class="main-footer__contact-heading h5 fw-bold">Contacto</h3>
-                <p class="main-footer__contact-detail">Celular: +56 9 1234 5678</p>
-            </div>
+                <div class="col-12 col-md-12 col-lg-4 text-center text-lg-start">
+                    <div class="main-footer__contact-info mb-3">
+                        <h3 class="main-footer__contact-heading h5 fw-bold text-info">Contacto</h3>
+                        <p class="main-footer__contact-detail">Celular: +56 9 1234 5678</p>
+                    </div>
+                    <div class="main-footer__contact-info mb-3">
+                        <h3 class="main-footer__contact-heading h5 fw-bold text-info">Email</h3>
+                        <p class="main-footer__contact-detail">contacto@techdesignsolutions.com</p>
+                    </div>
+                    <div class="main-footer__copyright footer-info">
+                        <p class="mb-1">&copy; 2025 TechDesign Solutions. Todos los derechos reservados.</p>
+                        <p class="mb-0">Desarrollado con dedicación</p>
+                    </div>
+                </div>
 
-            <div class="main-footer__contact-info mb-5">
-                <h3 class="main-footer__contact-heading h5 fw-bold">Email</h3>
-                <p class="main-footer__contact-detail">contacto@techdesignsolutions.com</p>
-            </div>
-
-            <div class="main-footer__copyright footer-info mb-3">
-                <p class="mb-1">&copy; 2025 TechDesign Solutions. Todos los derechos reservados.</p>
-                <p class="mb-0">Desarrollado con dedicación</p>
             </div>
         </div>
     </footer>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

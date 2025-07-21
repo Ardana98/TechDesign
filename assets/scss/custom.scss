@@ -45,6 +45,7 @@
 @use 'base/typography';
 
 // 5. Importa tus estilos de layout
+@use 'layout/header';
 @use 'layout/footer';
 @use 'layout/hero';
 @use 'layout/about';

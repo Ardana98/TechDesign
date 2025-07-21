@@ -9,6 +9,7 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; // Transición para efecto hover
     // Para asegurar consistencia con h-100 
     height: 100%; 
+    background: $color-light-grey;
 
     &:hover {
         transform: translateY(-5px); // Eleva la tarjeta ligeramente al pasar el cursor

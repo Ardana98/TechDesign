@@ -29,14 +29,14 @@
     &__content {
         position: relative;
         z-index: 2; // Coloca el contenido por encima del overlay
-        padding: $spacing-large; // Añade padding para el contenido
+        padding: $spacing-large; 
     }
 
     &__title {
         margin-bottom: $spacing-x-small; // Espaciado entre título y slogan
     }
 
-    // Media query para pantallas más grandes (ej. tablets y desktops)
+    // Media query para pantallas más grandes 
     @media (min-width: 768px) { // breakpoint de Bootstrap para `md`
         min-height: 70vh; // Mayor altura en pantallas grandes
     }

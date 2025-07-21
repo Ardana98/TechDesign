@@ -1,0 +1,40 @@
+@use '../abstracts/config' as *;
+
+.main-navbar {
+    background-color: $color-primary-text; 
+   
+
+  
+    .navbar-toggler-icon {
+        color: $color-white; 
+    }
+
+    &__brand {
+        font-size: $font-size-large; 
+        font-weight: bold; 
+        display: flex; 
+        align-items: center; 
+        gap: $spacing-small; 
+
+        &:hover {
+            color: lighten($color-white, 10%); // Efecto hover para el brand
+        }
+    }
+
+    &__logo {
+        width: 50px;  
+        height: 50px; 
+        margin-right: $spacing-small; 
+    }
+
+  
+
+    &__link {
+        color: $color-white; 
+
+        &:hover {
+            color: $color-light-blue; 
+        }
+        
+    }
+}

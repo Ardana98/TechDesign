@@ -11922,21 +11922,50 @@ h1, h2, h3, h4, h5, h6 {
   color: #0F1111;
 }
 
+.main-navbar {
+  background-color: #0F1111;
+}
+.main-navbar .navbar-toggler-icon {
+  color: #FFFFFF;
+}
+.main-navbar__brand {
+  font-size: 1.125rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.main-navbar__brand:hover {
+  color: white;
+}
+.main-navbar__logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+}
+.main-navbar__link {
+  color: #FFFFFF;
+}
+.main-navbar__link:hover {
+  color: #2e8291;
+}
+
 .main-footer {
-  background-color: #232f3e;
+  background-color: #0F1111;
   color: #FFFFFF;
   padding: 20px 0;
   font-size: 0.875rem;
   margin-top: auto; /* crucial para el "Sticky Footer" */
-  /* Clases BEM específicas dentro del footer */
-  /*  &__logo-container {
-      // Estilos para el contenedor del logo si los necesita
-  } */
 }
 .main-footer__logo {
   max-width: 80px;
   display: block;
   margin-inline: auto;
+}
+@media (min-width: 992px) {
+  .main-footer__logo {
+    margin-inline: 0;
+  }
 }
 .main-footer__description {
   font-size: 0.875rem;
@@ -12008,11 +12037,14 @@ h1, h2, h3, h4, h5, h6 {
     // Ejemplo: Si quisiera un fondo específico para toda la sección:
     // background-color: $color-light-grey; 
 } */
-/* .clients {
-    // Estilos generales para la sección de clientes si lo necesito
-    // Ejemplo:
-    // background-color: $color-background-light;
-} */
+.clients {
+  background-color: #232f3e;
+  color: #FFFFFF;
+}
+.clients__button {
+  margin-top: 32px;
+}
+
 .client-gallery .client-gallery__item {
   overflow: hidden;
   border-radius: 50%;
@@ -12021,6 +12053,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border: 2px solid #2e8291;
 }
 .client-gallery .client-gallery__item:hover {
   transform: scale(1.05);
@@ -12030,29 +12063,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
 }
-.client-gallery .client-gallery__item__overlay {
-  z-index: 2;
-  background-color: rgba(35, 47, 62, 0.85);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-.client-gallery .client-gallery__item:hover .client-gallery .client-gallery__item__overlay {
-  opacity: 1;
-  visibility: visible;
-}
-.client-gallery .client-gallery__item__name {
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-
-.clients__button {
-  margin-top: 32px;
-}
 
 .contact__form-wrapper {
   background-color: #FFFFFF;
   max-width: 600px;
+  border: 3px solid #2e8291;
 }
 
 .btn-primary {
@@ -12080,6 +12095,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   height: 100%;
+  background: #D3D3D3;
 }
 .service-card:hover {
   transform: translateY(-5px);
