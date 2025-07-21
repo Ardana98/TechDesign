@@ -79,7 +79,7 @@ Para configurar y ejecutar este proyecto en tu entorno local, sigue estos pasos:
 1.  **Clonar el Repositorio:**
     Abre tu terminal o línea de comandos y ejecuta:
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
+    git clone [text](https://github.com/Ardana98/TechDesign.git)
     cd techdesign-solutions
     ```
 
