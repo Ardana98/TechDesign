@@ -1,9 +1,9 @@
-// assets/scss/_custom.scss
+
 // Este es el archivo principal que se compila a assets/css/style.css
 // Contiene la importación de Bootstrap, la sobrescritura de sus variables
 // y la importación de todos los demás parciales del proyecto.
 
-// Empleo 'as *' para poder usar las variables como $color-primary-text directamente sin el prefijo 'config.'
+// Empleo 'as *' para poder usar las variables directamente sin el prefijo 'config.'
 @use 'abstracts/config' as *;
 
 @use "../../node_modules/bootstrap/scss/bootstrap" with (
@@ -21,13 +21,11 @@
 
   // Tipografía
   $font-family-base: $font-family-primary, // Fuente principal para todo el cuerpo
-  $headings-font-family: $font-family-primary, // O si tengo una fuente específica para títulos
-
-  // Tamaños de fuente para títulos (puedo mapearlos a mis variables de _config)
+  $headings-font-family: $font-family-primary, 
   $h1-font-size: $font-size-h1,
   $h2-font-size: $font-size-h2,
   $h3-font-size: $font-size-h3,
-  $h4-font-size: $font-size-h4, // Bootstrap también tiene h4-h6
+  $h4-font-size: $font-size-h4, 
   
 
   // Border-radius
@@ -48,18 +46,10 @@
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/hero';
-@use 'layout/about';
-@use 'layout/services-section';
 @use 'layout/clients';
 @use 'layout/contact';
 // 6. Importa tus estilos de componentes
-// Asegúrate de crear estos archivos vacíos por ahora si no existen
+
 @use 'components/button';
 @use 'components/service-card';
 @use 'components/contact-form';
-// @use 'components/form';
-// @use 'components/hero';
-// ... y otros componentes BEM que vayas a crear para tu landing page
-
-// 7. Importa los estilos específicos de página (si los hay para la landing page)
-// @use 'pages/home';

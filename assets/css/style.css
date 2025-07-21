@@ -12031,12 +12031,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* .services {
-    // Estilos generales para la sección de servicios (el contenedor principal)
-    // Por ahora, las clases de Bootstrap ya manejan gran parte del layout y padding.
-    // Ejemplo: Si quisiera un fondo específico para toda la sección:
-    // background-color: $color-light-grey; 
-} */
 .clients {
   background-color: #232f3e;
   color: #FFFFFF;
